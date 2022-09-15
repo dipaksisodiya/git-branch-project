@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gitHub-project';
+  constructor(){
+    console.log("ddd")
+    this.data()
+  }
+
+  data(){
+
+  }
 }
