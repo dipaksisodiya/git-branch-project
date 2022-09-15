@@ -29,6 +29,7 @@ export class AppComponent {
    console.log(data)
    }
   ngOnInit(): void {
+    console.log("lll")
   }
 
 
