@@ -1,1 +1,12 @@
-<h1>hello</h1>
+<div  class="container">
+<form>
+  <mat-form-field>
+    <input type="text" matInput [matAutocomplete]="auto" name="search" (keyup)="inputdata($event.target.value)" >
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let item of selectedOptions"[value]="item">
+       {{item}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
+</div>
